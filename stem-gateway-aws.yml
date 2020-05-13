@@ -1,0 +1,27 @@
+## Before Service Fault Monitoring Server
+## Leaf-Litter Microservice
+##
+## Company   : Hyundai Elevator
+## Developer : Hong-Chang Lee
+## E-mail    : hongchang.lee@hdel.co.kr
+    
+testvar: aws test value is change again!!!
+
+globalProperties:
+    leafServices:
+        com: leaf-com
+        mon: leaf-mon
+        fault: leaf-fault
+        proto: leaf-proto
+        code: leaf-code
+        cont: leaf-cont
+        set: leaf-set
+        owl: leaf-owl
+        litter: leaf-litter
+        life: leaf-life
+        data: leaf-data
+        sche: leaf-sche
+    stemServices:
+        route: stem-route
+        config: stem-config
+        gateway : stem-gateway

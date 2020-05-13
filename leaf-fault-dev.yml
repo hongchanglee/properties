@@ -24,4 +24,50 @@ globalProperties:
     stemServices:
         route: stem-route
         config: stem-config
-        gateway : stem-gateway
+        gateway : stem-gateway   
+special:
+    projects:
+        "103465L01":
+            fcodes:
+                "081":
+                    code: "081"
+                    resetable: false
+                    duration: 60
+                    ecode: "011309"
+                    conditions:
+                        - priority: time
+                          limit: none
+                          time: 20
+                          count: 1
+        "103465L02":
+            fcodes:
+                "122":
+                    code: "122"
+                    resetable: true
+                    duration: 60
+                    ecode: "011309"
+                    conditions:
+                        - priority: time
+                          limit: none
+                          time: 60
+                          count: 1
+                        - priority: count
+                          limit: none
+                          time: 60
+                          count: 2        
+blockedproject:
+    projects:
+        "103465L01":
+            projno: "103465L01"
+            expire: 20200131
+            memo: test1
+            codes:
+                - "001"
+                - "002"
+        "103465L02":
+            projno: "103465L02"
+            expire: 20200131
+            memo: test2
+            codes:
+                - "003"
+                - "004"
